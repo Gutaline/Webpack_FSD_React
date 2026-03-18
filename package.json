@@ -30,6 +30,8 @@
     "sass": "^1.94.0",
     "sass-loader": "^16.0.6",
     "style-loader": "^4.0.0",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard-scss": "^17.0.0",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",

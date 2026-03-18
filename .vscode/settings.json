@@ -8,7 +8,7 @@
     // Или, если файлы лежат в src: ["src/locales"]
     
     // Как организованы ключи: вложенные (nested) или плоские (flat)
-    "i18n-ally.keystyle": "flat",4
+    "i18n-ally.keystyle": "flat",
     
     // Какой язык показывать в коде (для удобства)
     "i18n-ally.displayLanguage": "ru",
@@ -16,9 +16,10 @@
     // Указываем, что используем react-i18next
     "i18n-ally.enabledFrameworks": ["react-i18next"],
 
-    // ---- Для ESLint -------------
+    // ---- Ctrl + s - применять eslint и stylelint  -------------
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.stylelint": "explicit"
     }
 
 }
