@@ -6,9 +6,11 @@ export const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = () => {
-    i18n.language === "ru"
-      ? i18n.changeLanguage("en")
-      : i18n.changeLanguage("ru");
+    if (i18n.language === "ru") {
+      i18n.changeLanguage("en");
+    } else {
+      i18n.changeLanguage("ru");
+    }
   };
 
   return <Button onClick={changeLanguage}>{t("Язык")}</Button>;

@@ -10,7 +10,6 @@ import "./styles/index.scss";
 
 export const App = () => {
   const { theme } = useTheme();
-
   return (
     <div className={`app ${theme}`}>
       <Suspense fallback="Loading App">
@@ -19,7 +18,7 @@ export const App = () => {
         <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             {routeConfig.map((item) => (
-              <Route path={item.path} element={item.element} />
+              <Route key={item.path} path={item.path} element={item.element} />
             ))}
           </Routes>
         </Suspense>
