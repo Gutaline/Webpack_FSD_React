@@ -17,6 +17,7 @@ export function buildConfig(mode: buildMode): Configuration {
       filename: "[name].[contenthash].js",
       clean: true,
     },
+    cache: false,
     module: {
       rules: buildLoaders(isDev),
     },

@@ -1,4 +1,4 @@
-@use "./reset.scss";
+@use "./reset";
 @use "variables/global";
 @use "themes/normal";
 @use "themes/dark";
@@ -7,6 +7,7 @@
   font: var(--font-m);
   background: var(--bg-color);
   color: var(--primary-color);
-
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
