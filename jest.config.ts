@@ -41,8 +41,6 @@ const config: Config = {
 
   moduleNameMapper: {
     "^(\\.{1,2}/.*)\\.js$": "$1",
-
-    // 👇 важно для CSS
     "\\.(css|scss|sass)$": "identity-obj-proxy",
   },
 

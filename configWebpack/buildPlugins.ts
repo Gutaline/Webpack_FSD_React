@@ -14,11 +14,13 @@ export function buildPlugins(isDev: boolean): webpack.WebpackPluginInstance[] {
       chunkFilename: "css/[name].[contenthash:8].css",
       filename: "css/[name].[contenthash:8].css",
     }),
-    new webpack.DefinePlugin({
-      __IS_DEV__: JSON.stringify(isDev),
-    }),
+
     new BundleAnalyzerPlugin({
       openAnalyzer: false,
+    }),
+
+    new webpack.DefinePlugin({
+      __MODE__: JSON.stringify(process.env.MODE),
     }),
   ];
 }

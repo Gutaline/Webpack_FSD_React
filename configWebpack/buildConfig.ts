@@ -8,7 +8,7 @@ import { buildDevServer } from "./buildDevServer";
 
 export function buildConfig(mode: buildMode): Configuration {
   const isDev = mode === buildMode.DEVELOPMENT;
-  console.log(mode, isDev);
+
   return {
     mode,
     entry: pathsConfig.entry,

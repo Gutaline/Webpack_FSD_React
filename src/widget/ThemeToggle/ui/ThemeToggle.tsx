@@ -11,7 +11,7 @@ export const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Button className={styles.btn} onClick={toggleTheme}>
+    <Button onClick={toggleTheme}>
       <IconToggle
         className={clsx(styles.lamp, {
           [styles.glowEffect]: theme === Theme.LIGHT,
